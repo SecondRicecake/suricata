@@ -2,6 +2,7 @@
 alert tcp any any -> any 80 (msg:"gilgil rule"; content:"GET /"; content:"Host: www.gilgil.net"; sid:10001; rev:1;)
 alert tcp any any -> any 80 (msg:"naver rule"; content:"GET /"; content:"Host: www.naver.com"; sid:10002; rev:1;)
 
+
 alert tcp any any -> any 80 (msg:"hitomi rule"; content:"GET / HTTP"; content:"Host: hitomi.la"; sid:10003; rev:1;)
 
 alert tcp any any -> any 80 (msg:"kass rule"; content:"GET / HTTP"; content:"Host: kass.org.kp"; sid:10004; rev:1;)
@@ -14,13 +15,15 @@ alert tcp any any -> any 80 (msg:"naevr rule"; content:"GET / HTTP"; content:"Ho
 
 alert tcp any any -> any 80 (msg:"naver6 rule"; content:"GET / HTTP"; content:"Host: naver6.com"; sid:10009; rev:1;)
 
+#no onaratv.com
+
 alert tcp any any -> any 80 (msg:"pornpros rule"; content:"GET / HTTP"; content:"Host: www.pornpros.com"; sid:10010; rev:1;)
 
 alert tcp any any -> any 80 (msg:"kitribob rule"; content:"GET /wiki HTTP"; content:"Host: kitribob.wiki/wiki"; sid:10006; rev:1;)
 
-alert tcp any any -> any 80 (msg:"linoit rule"; content:"GET /users/men1212/canvases/19%EA%B8%88%20 HTTP"; content:"Host: linoit.com/users/men1212/canvases/19%EA%B8%88%20"; sid:10011; rev:1;)
+alert tcp any any -> any 80 (msg:"linoit rule"; content:"GET /image/notification/close.png HTTP/1.1"; content:"Host: d23gl0hu9nedef.cloudfront.net"; sid:10011; rev:1;)
 
-alert tcp any any -> any 80 (msg:"named rule"; content:"GET /game/ladder/v2_index.php HTTP"; content:"Host: named.com/game/ladder/v2_index.php"; sid:10012; rev:1;)
+alert tcp any any -> any 80 (msg:"named rule"; content:"GET /js/popupLayer/popupLayout_20170727.js HTTP/1.1"; content:"Host: named.com"; sid:10012; rev:1;)
 
 alert tcp any any -> any 80 (msg:"rodong rule"; content:"GET / HTTP"; content:"Host: rodong.rep.kp"; sid:10013; rev:1;)
 
