@@ -1,0 +1,65 @@
+
+alert tcp any any -> any 80 (msg:"gilgil rule"; content:"GET /"; content:"Host: www.gilgil.net"; sid:10001; rev:1;)
+alert tcp any any -> any 80 (msg:"naver rule"; content:"GET /"; content:"Host: www.naver.com"; sid:10002; rev:1;)
+
+alert tcp any any -> any 80 (msg:"hitomi rule"; content:"GET / HTTP"; content:"Host: hitomi.la"; sid:10003; rev:1;)
+
+alert tcp any any -> any 80 (msg:"kass rule"; content:"GET / HTTP"; content:"Host: kass.org.kp"; sid:10004; rev:1;)
+
+alert tcp any any -> any 80 (msg:"kcna rule"; content:"GET / HTTP"; content:"Host: www.kcna.kp"; sid:10005; rev:1;)
+
+alert tcp any any -> any 80 (msg:"ks8282 rule"; content:"GET / HTTP"; content:"Host: ks8282.com"; sid:10007; rev:1;)
+
+alert tcp any any -> any 80 (msg:"naevr rule"; content:"GET / HTTP"; content:"Host: naevr.com"; sid:10008; rev:1;)
+
+alert tcp any any -> any 80 (msg:"naver6 rule"; content:"GET / HTTP"; content:"Host: naver6.com"; sid:10009; rev:1;)
+
+alert tcp any any -> any 80 (msg:"pornpros rule"; content:"GET / HTTP"; content:"Host: www.pornpros.com"; sid:10010; rev:1;)
+
+alert tcp any any -> any 80 (msg:"kitribob rule"; content:"GET /wiki HTTP"; content:"Host: kitribob.wiki/wiki"; sid:10006; rev:1;)
+
+alert tcp any any -> any 80 (msg:"linoit rule"; content:"GET /users/men1212/canvases/19%EA%B8%88%20 HTTP"; content:"Host: linoit.com/users/men1212/canvases/19%EA%B8%88%20"; sid:10011; rev:1;)
+
+alert tcp any any -> any 80 (msg:"named rule"; content:"GET /game/ladder/v2_index.php HTTP"; content:"Host: named.com/game/ladder/v2_index.php"; sid:10012; rev:1;)
+
+alert tcp any any -> any 80 (msg:"rodong rule"; content:"GET / HTTP"; content:"Host: rodong.rep.kp"; sid:10013; rev:1;)
+
+alert tcp any any -> any 80 (msg:"snoopspy DOWN rule"; content:"GET /download HTTP"; content:"Host: snoopspy.com"; sid:10014; rev:1;)
+
+alert tcp any any -> any 80 (msg:"gilgil STREAMING rule"; content:"GET /streaming/test.mp4 HTTP"; content:"Host: test.gilgil.net/streaming/test.mp4"; sid:10015; rev:1;
+
+alert tcp any any -> any 80 (msg:"uriminzokkiri rule"; content:"GET / HTTP"; content:"Host: uriminzokkiri.com"; sid:10016; rev:1;)
+
+alert tcp any any -> any 80 (msg:"4shared rule"; content:"GET / HTTP"; content:"Host: www.4shared.com"; sid:10017; rev:1;)
+
+alert tcp any any -> any 80 (msg:"bamwar25 rule"; content:"GET / HTTP"; content:"Host: www.bamwar25.com"; sid:10018; rev:1;)
+
+alert tcp any any -> any 80 (msg:"faa25 rule"; content:"GET / HTTP"; content:"Host: www.faa25.com"; sid:10019; rev:1;)
+
+alert tcp any any -> any 80 (msg:"ilbe rule"; content:"GET /ilbe HTTP"; content:"Host: www.ilbe.com/ilbe"; sid:10020; rev:1;)
+
+alert tcp any any -> any 80 (msg:"kimmadam rule"; content:"GET / HTTP"; content:"Host: www.kimmadam.net"; sid:10021; rev:1;)
+
+alert tcp any any -> any 80 (msg:"minjok rule"; content:"GET / HTTP"; content:"Host: www.minjok.com"; sid:10022; rev:1;)
+
+alert tcp any any -> any 80 (msg:"narutoxxx rule"; content:"GET / HTTP"; content:"Host: www.narutoxxx.com"; sid:10023; rev:1;)
+
+alert tcp any any -> any 80 (msg:"fake naver rule"; content:"GET / HTTP"; content:"Host: www.naver.cm"; sid:10024; rev:1;)
+
+alert tcp any any -> any 80 (msg:"ryomyong rule"; content:"GET / HTTP"; content:"Host: www.ryomyong.com"; sid:10025; rev:1;)
+
+alert tcp any any -> any 80 (msg:"sedisk rule"; content:"GET / HTTP"; content:"Host: sedisk.com"; sid:10026; rev:1;)
+
+alert tcp any any -> any 80 (msg:"sk386 rule"; content:"GET / HTTP"; content:"Host: www.sk386.com"; sid:10027; rev:1;)
+
+alert tcp any any -> any 80 (msg:"tcosc rule"; content:"GET / HTTP"; content:"Host: www.tcosc.net"; sid:10028; rev:1;)
+
+alert tcp any any -> any 80 (msg:"torenzoa rule"; content:"GET / HTTP"; content:"Host: www.torenzoa.net"; sid:10029; rev:1;)
+
+alert tcp any any -> any 80 (msg:"umj262 rule"; content:"GET / HTTP"; content:"Host: www.umj262.com"; sid:10030; rev:1;)
+
+alert tcp any any -> any 80 (msg:"urimnzokkiri rule"; content:"GET / HTTP"; content:"Host: www.uriminzokkiri.com"; sid:10030; rev:1;)
+
+alert tcp any any -> any 80 (msg:"winclub88 rule"; content:"GET / HTTP"; content:"Host: www.winclub88.net/my/4D.html"; sid:10030; rev:1;)
+
+
